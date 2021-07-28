@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- --------------Account Page--------------------- -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2" data-aos="fade-right" data-aos-easing="ease-out-cubic">
+                    <img src="carousel.png" alt="img">
+                </div>
+                <div class="col-2" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                    <div class="card">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="signup()">Signup</span>
+                            <hr id="indicate">
+                        </div>
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn">Sign In</button>
+                            <a href="#">Forgot password ?</a>
+                        </form>
+                        <form id="signupForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="contact">
+            <p class="copyright">Copyright &#169; 2020 - <a href="https://linktr.ee/zahidkhan262/"
+                    target="_zahidkhan"><span> zahidkhan262</span></a></p>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- script -->
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+        var indicate = document.getElementById("indicate");
+
+        function signup() {
+            signupForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicate.style.transform = "translateX(100px)";
+        }
+        function login() {
+            signupForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicate.style.transform = "translateX(0px)";
+        }
+    </script>
+
+    <!-- ---------animation-------------------------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

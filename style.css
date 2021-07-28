@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    padding: 0 25px;
+    margin: auto;
+    max-width: 1350px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 20px 0;
+}
+.col-2 img{
+    width: 100%;
+}
+
+
+
+/* button */
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 10px 30px ;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+.account-page{
+    padding: 50px 0;
+    background: linear-gradient(#1D976C,#93F9B9);
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden; 
+}
+button{
+    outline: none;
+    border: none;
+}
+.card span{
+    font-weight: bold;
+    color: #555;
+    width: 100px;
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;   
+    
+}
+.form-btn{
+    display: inline-block;
+}
+.card form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+#loginForm{
+    left: -300px;
+}
+#signupForm{
+    left: 0;
+}
+form a{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    color: #555;
+}
+#indicate{
+    width: 100px;
+    border: none;
+    background: crimson;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+footer{
+    background: #000;
+ 
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+.contact{
+    text-align: center;
+    color: #8a8a8a;
+    font-size: 14px;
+}
+.contact a{
+    color: #fff;
+}
+.contact a:hover{
+    color: crimson;
+}
